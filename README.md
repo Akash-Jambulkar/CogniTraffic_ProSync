@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# CogniTraffic_ProSync
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+The Smart Traffic Management System (STMS) is an innovative solution designed to optimize traffic flow and reduce congestion at intersections using edge computing. This repository contains the source code and documentation for the project.
 
-In the project directory, you can run:
+## Project Components
 
-### `npm start`
+### 1. Edge Device Management Module
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Model:
+- DeviceModel: Represents edge device structure and behavior.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### View:
+- DashboardView: Displays connected edge devices and real-time updates.
+- DeviceConfigView: Allows administrators to configure edge devices.
+- DataAnalyticsView: Displays real-time data processing metrics.
 
-### `npm test`
+#### Controller:
+- DeviceController: Handles user inputs and updates DeviceModel.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Traffic Optimization Control Module
 
-### `npm run build`
+#### Model:
+- TrafficModel: Represents traffic conditions and performance metrics.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### View:
+- TrafficOverviewView: Displays real-time map showing intersections and traffic conditions.
+- TrafficLightOptimizationView: Allows manual and dynamic adjustments of traffic light timings.
+- PerformanceMetricsView: Displays key performance metrics.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Controller:
+- TrafficController: Handles user inputs and updates TrafficModel.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. User Interface for Monitoring Module
 
-### `npm run eject`
+#### Model:
+- SystemModel: Represents the overall system and manages critical events.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### View:
+- MainDashboardView: Displays overview of the entire system and real-time alerts.
+- TrafficVisualizationView: Presents interactive map with real-time traffic flow.
+- AnalyticsSectionView: Provides historical data analysis tools.
+- EmergencyControlView: Allows manual intervention through emergency protocols.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Controller:
+- SystemController: Handles user inputs and updates SystemModel.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technical Considerations
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Responsive Design:** Utilize HTML5, CSS, and JavaScript frameworks (React or Angular).
+- **Security Measures:** Implement HTTPS and use JWT for user authentication.
+- **Real-time Communication:** Use WebSockets for instant updates.
+- **Backend Technologies:** Node.js and Express.js for the backend, MongoDB for data storage.
+- **Data Encryption:** Implement secure data encryption mechanisms.
+- **User-Friendly Design:** Ensure an intuitive and user-friendly design.
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository: `git clone [repository_url]`
+2. Change the directory: `cd [dir_name]`
+3. Install dependencies: `npm install i`
+4. Start the server: `npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribution Guidelines
 
-### Code Splitting
+If you'd like to contribute to the project, please follow our [contribution guidelines](CONTRIBUTING.md).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
