@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ReactMapGL from 'react-map-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from 'mapbox-gl'; // Import mapboxgl
-import './MapComponent.css'; // Import MapComponent-specific styles
+import mapboxgl from 'mapbox-gl';
+import './MapComponent.css';
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+
 
 const MapComponent = () => {
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -15,12 +16,13 @@ const MapComponent = () => {
   });
 
   useEffect(() => {
+    mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_KEY;
+
     const map = new mapboxgl.Map({
       container: 'map-container',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [viewport.longitude, viewport.latitude],
       zoom: viewport.zoom,
-      accessToken: 'YOUR_MAPBOX_API_KEY',
     });
 
     map.on('load', () => {
@@ -39,7 +41,7 @@ const MapComponent = () => {
       {mapLoaded && (
         <ReactMapGL
           {...viewport}
-          mapboxApiAccessToken="YOUR_MAPBOX_API_KEY"
+          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
           mapStyle="mapbox://styles/mapbox/streets-v11"
           onViewportChange={(viewport) => setViewport(viewport)}
         />
