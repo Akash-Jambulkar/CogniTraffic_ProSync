@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+REACT_APP_MAPBOX_API_KEY=pk.eyJ1IjoiYWthc2hqYW1idWxrYXIiLCJhIjoiY2xybHpwajNpMHR2dDJtcGVrcGJkanl1NCJ9.MpkuaLfJQ_ubYY1ufoOxwg
+
+
 # dependencies
 /node_modules
 /.pnp
