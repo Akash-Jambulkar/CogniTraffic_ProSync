@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import ReactMapGL from 'react-map-gl';
 import mapboxgl from 'mapbox-gl';
 import './MapComponent.css';
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
-
 
 const MapComponent = () => {
   const [mapLoaded, setMapLoaded] = useState(false);
