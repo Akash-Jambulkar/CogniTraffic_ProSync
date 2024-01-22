@@ -1,7 +1,10 @@
+// Importing React and TrafficTable-specific styles
 import React from 'react';
-import './trafficTable.css'; // Import TrafficTable-specific styles
+import './trafficTable.css';
 
+// TrafficTable component definition
 const TrafficTable = () => {
+  // Sample traffic data
   const trafficData = [
     { id: 1, location: 'Intersection A', status: 'Normal' },
     { id: 2, location: 'Intersection B', status: 'Congested' },
@@ -10,9 +13,11 @@ const TrafficTable = () => {
     { id: 5, location: 'Intersection E', status: 'Normal' },
   ];
 
+  // JSX to render the traffic table
   return (
     <div className="table-container">
       <h2>Traffic Data Table</h2>
+      {/* Table structure for displaying traffic data */}
       <table>
         <thead>
           <tr>
@@ -22,6 +27,7 @@ const TrafficTable = () => {
           </tr>
         </thead>
         <tbody>
+          {/* Mapping through trafficData to render rows in the table */}
           {trafficData.map((data) => (
             <tr key={data.id}>
               <td>{data.id}</td>
@@ -35,4 +41,5 @@ const TrafficTable = () => {
   );
 };
 
+// Exporting the TrafficTable component for use in other parts of the application
 export default TrafficTable;
