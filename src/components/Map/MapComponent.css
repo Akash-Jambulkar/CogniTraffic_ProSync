@@ -1,4 +1,14 @@
+/* MapComponent.css */
+
+/* Styles for the map container */
 .map-container {
-    margin-bottom: 20px;
-  }
-  
+  margin-bottom: 20px; /* Adds space below the map container */
+  border: 1px solid #ddd; /* Adds a border around the map container */
+  border-radius: 8px; /* Rounds the corners of the map container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow for depth */
+}
+
+/* Optional: Customize the map appearance */
+#map-container .mapboxgl-map {
+  border-radius: 8px; /* Rounds the corners of the Mapbox map */
+}

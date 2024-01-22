@@ -1,6 +1,34 @@
+/* TrafficChart.css */
+
+/* Styles for the chart container */
 .chart-container {
-    margin-bottom: 20px;
-  }
-  
-  /* Add specific styles for TrafficChart if needed */
-  
+  margin-bottom: 20px; /* Adds space below the chart container */
+  padding: 20px; /* Adds internal padding to the chart container */
+  border: 1px solid #ddd; /* Adds a border around the chart container */
+  border-radius: 8px; /* Rounds the corners of the chart container */
+  background-color: #fff; /* Sets the background color of the chart container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow for depth */
+}
+
+/* Additional styling for the chart title */
+.chart-container h2 {
+  margin-bottom: 10px; /* Adds space below the chart title */
+  font-size: 18px; /* Sets the font size of the chart title */
+  color: #333; /* Sets the text color of the chart title */
+}
+
+/* Styles for the chart canvas */
+#trafficChart {
+  width: 100%; /* Makes the chart canvas fill its container horizontally */
+  max-width: 600px; /* Sets a maximum width for the chart canvas */
+  height: auto; /* Allows the chart canvas to adjust its height automatically */
+  margin: 0 auto; /* Centers the chart canvas horizontally */
+  border-radius: 8px; /* Rounds the corners of the chart canvas */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow for depth */
+}
+
+/* Additional styling for the Chart.js data labels */
+.chart-container .chartjs-datalabels {
+  font-weight: bold; /* Sets the font weight of the data labels to bold */
+  font-size: 14px; /* Sets the font size of the data labels */
+}
